@@ -4,6 +4,7 @@ export const signup = async (user) => {
 	return await axios
 		.post("/signup", user)
 		.then((response) => {
+			console.log(response.data)
 			return response.data;
 		})
 		.catch((error) => error);
