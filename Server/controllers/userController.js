@@ -14,8 +14,7 @@ exports.signup = BigPromise(async (req, res, next) => {
 		name,
 		email,
 		password,
-	});
-
+    });
 	cookieToken(user, res);
 });
 
