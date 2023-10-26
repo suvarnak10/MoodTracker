@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import DashboardNav from "../components/DashboardNav";
+import { Outlet, useNavigate } from "react-router-dom";
 import { isAuthenticated } from "../utils/auth";
 
 const Dashboard = () => {
@@ -13,7 +14,8 @@ const Dashboard = () => {
 
 	return (
 		<div className="flex">
-            <h1>Dashboard</h1>
+			<DashboardNav />
+			<Outlet />
 		</div>
 	);
 };
