@@ -8,13 +8,12 @@ const getRandomColor = () => {
 	return color;
 };
 
-const ChartLayout = () => {
+const ChartLayout = ({ positive,negative,neutral }) => {
+
 const data = [
-	{ name: "joy", data: 5, fill: getRandomColor() },
-	{ name: "sad", data: 6, fill: getRandomColor() },
-	{ name: "anger", data: 4, fill: getRandomColor() },
-	{ name: "suprise", data: 5, fill: getRandomColor() },
-	{ name: "haaappy", data: 4, fill: getRandomColor() },
+	{ name: "happy", data: positive, fill: getRandomColor() },
+	{ name: "sad", data: negative, fill: getRandomColor() },
+	{ name: "neutral", data: neutral, fill: getRandomColor() },
 ];
 
 	return (
