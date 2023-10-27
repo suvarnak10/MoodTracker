@@ -3,30 +3,35 @@ const mongoose = require("mongoose");
 const journalSchema = new mongoose.Schema(
 	{
 		date: {
-			type: Date,
+			type: String,
 			required: true,
 		},
 		user: {
 			type: mongoose.Schema.Types.ObjectId,
-			ref: "User", // Reference to the User model
+			ref: "User",
 			required: true,
 		},
-		entries: [
+		entries:
 			{
 				feedback: {
 					type: String,
 					required: true,
 				},
-				emotion: {
-					type: String,
-					required: true,
-					enum: {
-						values: ["happy", "sad", "neutral"],
-						message: "Please select a category from - happy, sad, neutral.",
+				emotions: {
+					negative: {
+						type: Number,
+						required: true,
+					},
+					neutral: {
+						type: Number,
+						required: true,
+					},
+					positive: {
+						type: Number,
+						required: true,
 					},
 				},
 			},
-		],
 	},
 	{ timestamps: true }
 );
