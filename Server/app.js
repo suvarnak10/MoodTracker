@@ -14,11 +14,11 @@ app.use(morgan("tiny"));
 
 //import all routes
 const user = require("./routes/user");
-//const journal = require("./routes/journalRoute")
+const journal = require("./routes/Journal")
 
 //router middleware
 app.use("/api/v1", user);
-///app.use("/api/v1", journal);
+app.use("/api/v1", journal);
 
 
 module.exports = app;
