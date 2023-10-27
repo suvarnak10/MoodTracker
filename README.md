@@ -1,8 +1,8 @@
-# MoodTracker App
+# SentiNental
 
-MoodTracker is an application that allows users to track their daily moods. The app employs Natural Language Processing (NLP) to analyze the content of these entries, provides visual feedback on mood trends, and offers insights and suggestions based on detected mood patterns.
+SentiNental is an application that allows users to track their daily moods. The app employs Natural Language Processing (NLP) to analyze the content of these entries, provides visual feedback on mood trends, and offers insights and suggestions based on detected mood patterns.
 
-
+The model is based on spaCy, a popular natural language processing library. It starts with an empty spaCy model. Utilizing a Bag of Words (BOW) configuration, the model learns to distinguish between "positive" and "negative" sentiments in the reviews. By iterating through multiple epochs and utilizing stochastic gradient descent (SGD) optimization, the model minimizes its training loss, making it capable of making predictions on sentiment labels with reasonable accuracy.The careful data preprocessing and model training make it a valuable tool for sentiment analysis in the context of mental health and overall life satisfaction.
 
 
 ## Table of Contents
@@ -80,10 +80,9 @@ Before you begin, make sure you have the following software and tools installed:
 2. Start the Flask app:
 
    ```bash
-   python app.py
+   python flask_app.py
    ```
-
-   The Flask app will run on [http://localhost:5000](http://localhost:5000).
+  The Flask app for API.
 
 ## Usage
 
