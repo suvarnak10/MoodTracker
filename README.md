@@ -4,6 +4,8 @@ SentiNental is an application that allows users to track their daily moods. The 
 
 The developed natural language processing (NLP) model leverages the en_core_web_sm pipeline from the spaCy library for initial data processing, ensuring comprehensive linguistic analysis and feature extraction from the labeled Twitter sentiment data. The textual data is subsequently transformed into a numerical representation using the TfidfVectorizer from the widely employed scikit-learn library, thereby enabling the conversion of text data into a meaningful numeric format suitable for further analysis. The model is trained using a linear Support Vector Regressor (SVR), allowing for the generation of continuous output scores corresponding to distinct emotional categories derived from the processed Twitter data. This robust approach facilitates the assessment of sentiment nuances across multiple emotional dimensions, thereby contributing to a comprehensive understanding of the sentiment landscape within the Twitter dataset.
 
+Video Link : https://www.loom.com/share/a854ce4c7bf74561bf53acd7e2f5cc79?sid=8fc5a8f4-db85-42de-b6f9-cad33cc5bf40
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
