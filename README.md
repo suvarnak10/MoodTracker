@@ -2,8 +2,7 @@
 
 SentiNental is an application that allows users to track their daily moods. The app employs Natural Language Processing (NLP) to analyze the content of these entries, provides visual feedback on mood trends, and offers insights and suggestions based on detected mood patterns.
 
-The model is based on spaCy, a popular natural language processing library. It starts with an empty spaCy model. Utilizing a Bag of Words (BOW) configuration, the model learns to distinguish between "positive" and "negative" sentiments in the reviews. By iterating through multiple epochs and utilizing stochastic gradient descent (SGD) optimization, the model minimizes its training loss, making it capable of making predictions on sentiment labels with reasonable accuracy.The careful data preprocessing and model training make it a valuable tool for sentiment analysis in the context of mental health and overall life satisfaction.
-
+The developed natural language processing (NLP) model leverages the en_core_web_sm pipeline from the spaCy library for initial data processing, ensuring comprehensive linguistic analysis and feature extraction from the labeled Twitter sentiment data. The textual data is subsequently transformed into a numerical representation using the TfidfVectorizer from the widely employed scikit-learn library, thereby enabling the conversion of text data into a meaningful numeric format suitable for further analysis. The model is trained using a linear Support Vector Regressor (SVR), allowing for the generation of continuous output scores corresponding to distinct emotional categories derived from the processed Twitter data. This robust approach facilitates the assessment of sentiment nuances across multiple emotional dimensions, thereby contributing to a comprehensive understanding of the sentiment landscape within the Twitter dataset.
 
 ## Table of Contents
 
